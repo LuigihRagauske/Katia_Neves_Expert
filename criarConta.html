@@ -1,53 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Criar conta — Kátia Neves Expert</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Open+Sans:wght@400;600&display=swap">
-<link rel="stylesheet" href="criarConta.css">
-</head>
-<body>
-<main class="card">
-  <header class="top">
-    <div class="avatar"><svg viewBox="0 0 60 60" aria-label="Paraquedas"><path d="M4 26C8 10 30 2 46 10c10 6 10 18 6 28Q44 32 36 34Q26 30 16 32Q9 28 4 26Z" fill="#990000"/><path d="M18 28C22 16 34 11 44 13c5 6 4 15 3 21Q40 30 32 32Q25 29 18 28Z" fill="#ad3131"/><path d="M4 26L16 32L14 54ZM16 32L36 34L14 54ZM36 34L52 38L14 54Z" fill="#fff" stroke="#000" stroke-width=".8" stroke-linejoin="round"/><path d="M14 54l-3-3 4-1Z" fill="#000"/></svg></div>
-    <h1>Criar conta</h1>
-    <p>Kátia Neves Expert</p>
-  </header>
-  <div class="wave" aria-hidden="true">
-    <svg viewBox="0 0 400 38" preserveAspectRatio="none"><path d="M0 0H400V18C360 26 330 10 280 10S200 38 140 32 S40 0 0 6Z" fill="#c88784"/></svg>
-  </div>
-  <div class="form">
-    <p class="label">Eu sou</p>
-    <div class="roles">
-      <button class="role on" type="button">Mãe, pai ou responsável</button>
-      <button class="role" type="button">Professor(a) ou educador(a)</button>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Criar conta — Kátia Neves Expert</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <main class="card">
+      <header class="top">
+        <div class="avatar">
+          <svg viewBox="0 0 60 60" aria-label="Paraquedas">
+            <path d="M4 26C8 10 30 2 46 10c10 6 10 18 6 28Q44 32 36 34Q26 30 16 32Q9 28 4 26Z" fill="#990000"/>
+            <path d="M18 28C22 16 34 11 44 13c5 6 4 15 3 21Q40 30 32 32Q25 29 18 28Z" fill="#ad3131"/>
+            <path d="M4 26L16 32L14 54ZM16 32L36 34L14 54ZM36 34L52 38L14 54Z" fill="#fff" stroke="#000" stroke-width=".8" stroke-linejoin="round"/>
+            <path d="M14 54l-3-3 4-1Z" fill="#000"/>
+          </svg>
+        </div>
+        <h1>Criar conta</h1>
+        <p>Kátia Neves Expert</p>
+      </header>
 
-    <div class="field">
-      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-      <input id="n" type="text" placeholder=" " autocomplete="off"><label for="n">Nome</label>
-    </div>
-    <div class="field">
-      <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
-      <input id="e" type="email" placeholder=" " autocomplete="off"><label for="e">E-mail</label>
-    </div>
-    <div class="field">
-      <svg class="ic" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="3"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
-      <input id="s" type="password" placeholder=" " autocomplete="off"><label for="s">Senha</label>
-      <button class="eye" type="button" aria-label="Mostrar senha"><svg class="on" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><svg class="off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A9.7 9.7 0 0112 5c6.4 0 10 7 10 7a17 17 0 01-3.2 4M6.5 6.6C3.7 8.4 2 12 2 12s3.6 7 10 7c1.6 0 3-.4 4.2-1M9.9 9.9a3 3 0 004.2 4.2"/></svg></button>
-    </div>
-    <div class="field">
-      <svg class="ic" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="3"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
-      <input id="c" type="password" placeholder=" " autocomplete="off"><label for="c">Confirmar senha</label>
-      <button class="eye" type="button" aria-label="Mostrar senha"><svg class="on" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><svg class="off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A9.7 9.7 0 0112 5c6.4 0 10 7 10 7a17 17 0 01-3.2 4M6.5 6.6C3.7 8.4 2 12 2 12s3.6 7 10 7c1.6 0 3-.4 4.2-1M9.9 9.9a3 3 0 004.2 4.2"/></svg></button>
-    </div>
+      <div class="wave" aria-hidden="true">
+        <svg viewBox="0 0 400 38" preserveAspectRatio="none">
+          <path d="M0 0H400V18C360 26 330 10 280 10S200 38 140 32 S40 0 0 6Z" fill="#c88784"/>
+        </svg>
+      </div>
 
-    <label class="check"><input type="checkbox"><span>Li e aceito os termos e a política de privacidade</span></label>
-    <button class="btn" type="button">Criar conta</button>
-    <a class="link" href="#">Já tenho conta</a>
-  </div>
-</main>
-<script src="criarConta.js"></script>
-</body>
+      <form class="form" id="form" novalidate>
+        <p class="label">Eu sou</p>
+        <div class="roles">
+          <button class="role on" type="button" data-perfil="responsavel">Mãe, pai ou responsável</button>
+          <button class="role" type="button" data-perfil="professor">Professor(a) ou educador(a)</button>
+        </div>
+
+        <div class="field">
+          <svg class="ic" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <input id="nome" type="text" placeholder=" " autocomplete="name">
+          <label for="nome">Nome</label>
+        </div>
+
+        <div class="field">
+          <svg class="ic" viewBox="0 0 24 24">
+            <rect x="3" y="5" width="18" height="14" rx="3"/>
+            <path d="M4 7l8 6 8-6"/>
+          </svg>
+          <input id="email" type="email" placeholder=" " autocomplete="email">
+          <label for="email">E-mail</label>
+        </div>
+
+        <div class="field">
+          <svg class="ic" viewBox="0 0 24 24">
+            <rect x="5" y="11" width="14" height="10" rx="3"/>
+            <path d="M8 11V8a4 4 0 018 0v3"/>
+          </svg>
+          <input id="senha" type="password" placeholder=" " autocomplete="new-password">
+          <label for="senha">Senha</label>
+          <button class="eye" type="button" aria-label="Mostrar senha">
+            <svg class="on" viewBox="0 0 24 24">
+              <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="off" viewBox="0 0 24 24">
+              <path d="M3 3l18 18M10.6 5.1A9.7 9.7 0 0112 5c6.4 0 10 7 10 7a17 17 0 01-3.2 4M6.5 6.6C3.7 8.4 2 12 2 12s3.6 7 10 7c1.6 0 3-.4 4.2-1M9.9 9.9a3 3 0 004.2 4.2"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="field">
+          <svg class="ic" viewBox="0 0 24 24">
+            <rect x="5" y="11" width="14" height="10" rx="3"/>
+            <path d="M8 11V8a4 4 0 018 0v3"/>
+          </svg>
+          <input id="confirmar" type="password" placeholder=" " autocomplete="new-password">
+          <label for="confirmar">Confirmar senha</label>
+          <button class="eye" type="button" aria-label="Mostrar senha">
+            <svg class="on" viewBox="0 0 24 24">
+              <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="off" viewBox="0 0 24 24">
+              <path d="M3 3l18 18M10.6 5.1A9.7 9.7 0 0112 5c6.4 0 10 7 10 7a17 17 0 01-3.2 4M6.5 6.6C3.7 8.4 2 12 2 12s3.6 7 10 7c1.6 0 3-.4 4.2-1M9.9 9.9a3 3 0 004.2 4.2"/>
+            </svg>
+          </button>
+        </div>
+        <label class="check">
+          <input id="termos" type="checkbox">
+          <span>Li e aceito os termos e a política de privacidade</span>
+        </label>
+        <p class="msg" id="msg" role="alert" aria-live="polite"></p>
+        <button class="btn" id="botao" type="submit">Criar conta</button>
+        <a class="link" href="login.html">Já tenho conta</a>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+    <script src="supabaseClient.js"></script>
+    <script src="comum.js"></script>
+    <script src="criarConta.js"></script>
+  </body>
 </html>
