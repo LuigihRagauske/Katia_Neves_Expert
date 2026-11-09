@@ -12,7 +12,7 @@ form.addEventListener("submit", async (evento) => {
 
   carregando(botao, true);
   const { error } = await sb.auth.resetPasswordForEmail(email, {
-    redirectTo: window.location.origin + "/redefinirSenha.html",
+    redirectTo: new URL("redefinirSenha.html", window.location.href).href,
   });
   carregando(botao, false);
 

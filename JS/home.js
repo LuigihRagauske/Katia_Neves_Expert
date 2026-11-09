@@ -8,7 +8,7 @@ async function carregarUsuario() {
 
   // Sem login, volta para a tela de login
   if (!data.session) {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -27,7 +27,7 @@ async function carregarUsuario() {
 
 document.getElementById("sair").addEventListener("click", async () => {
   await sb.auth.signOut();
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
 
 carregarUsuario();

@@ -36,5 +36,5 @@ form.addEventListener("submit", async (evento) => {
 
   mostrarMsg("Senha alterada! Levando você para o login...", "ok");
   await sb.auth.signOut();
-  setTimeout(() => (window.location.href = "login.html"), 2000);
+  setTimeout(() => (window.location.href = "index.html"), 2000);
 });

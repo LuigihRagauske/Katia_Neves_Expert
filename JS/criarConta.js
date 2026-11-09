@@ -39,7 +39,7 @@ form.addEventListener("submit", async (evento) => {
     password: senha,
     options: {
       data: { nome, perfil },
-      emailRedirectTo: window.location.origin + "/login.html",
+      emailRedirectTo: new URL("index.html", window.location.href).href,
     },
   });
   carregando(botao, false);
